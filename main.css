@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#home {
+    height: 100vh;
+    background: url('images/backgroundimage.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* 🔥 Navbar Styling */
+.navbar {
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364); /* Dark gradient */
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #00c6ff !important; /* Blue hover effect */
+    transform: scale(1.1);
+}
+
+/* Style for Navbar Brand */
+.navbar-brand {
+    font-size: 24px;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn-outline-light {
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #203a43 !important;
+}
+
+/*resume section */
+#resume {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 40px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#resume:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+#resume h2 {
+    color: #007bff; /* Primary blue color */
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#resume p {
+    font-size: 1.1rem;
+    color: #6c757d; /* Muted text */
+    margin-bottom: 30px;
+}
+
+#resume .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#resume .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+/* skills section*/
+/* Style for the skill cards */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card i {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .skill-card:hover i {
+    color: #0056b3;
+  }
+  
+  /* Adding animations on page load */
+  #skills {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .skill-card {
+      margin-bottom: 15px;
+    }
+  }
+  
+/*hero section image styling*/
+.hero-img {
+  width: 80%; /* Default size */
+  max-width: 300px; /* Prevents it from being too big */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+      width: 60%; /* Shrinks further on small screens */
+      max-width: 200px;
+  }
+}
